@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FFFFFF, #CCCCCC);  
+}
+
+/* .header {
+    position: relative;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+} */
+ .header{
+    
+ }
+
+
+/* .container {
+    width: 80%;
+    margin: 0 auto;
+} */
+
+
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white; /* Полупрозрачный фон */
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgb(70, 70, 70);
+    z-index: 2;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 200px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.header__logo p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.header__nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.header__menu-item a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header__menu-item span{
+    color: red;
+}
+
+.header__menu-item a:hover {
+    color: red; /* Цвет при наведении */
+}
+
+.header__menu-item:hover{
+    color: red;
+    transition: .3s;
+}
+
+.header__banner {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.header__banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.header__container nav{
+    position: sticky;
+}
+
+
+.main{
+    padding: 140px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* .main__aboutus{
+
+    width: 60%;
+    height: 200px;
+    color: black;
+}
+
+.main__aboutus-dyn{
+    padding-top: 30px;
+    font-size: 10px;
+}
+
+.main__aboutus-dyn span{
+    color: rgb(96, 95, 95);
+}
+
+.main__aboutus-tick{
+    padding: 10px;
+} */
+
+
+.main__aboutus{
+
+}
+
+
+
+.header__content{
+    padding-top: 150px;
+}
+
+.header__content-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки одинаковой ширины */
+    grid-auto-rows: repeat(4, 1fr); /* Автоматическая высота строк */
+    gap: 100px 50px; /* Расстояние между элементами */
+    width: 80%; /* Ограничиваем ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+.header__content-img{
+    width: 600px;
+    height: 300px; /* Примерная высота для изображения */ /* Цвет фона для демонстрации */ /* Обводка для наглядности */
+    transition: box-shadow 0.3s ease;
+     /* Плавный переход для тени */
+
+}
+
+.header__content-img:nth-child(1) {
+    grid-row: span 2;
+    width: 300px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.header__content-img:nth-child(5){
+    grid-row: span 2;
+    width: 300px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+
+.header__content-img img{
+    object-fit: cover;
+    border: 1px solid gray; /* Оранжевая рамка */
+    border-radius: 15px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    transition: transform 0.3s ease; /* Плавное увеличение */
+}
+
+.header__content img:hover{
+    transform: scale(1.05);
+}
+
+/* Main */
+
+
+.main__content-title{
+    color: rgb(80, 80, 80);
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+.main__content-link{
+    font-weight: 100;
+    color: rgb(32, 32, 32);
+}
+
+.main__content-item img {
+    max-width: 500px;
+}
+
+.main__content-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* Footer */
+
+footer{
+
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 350px;
+    background-color: rgb(55, 55, 55);
+}
+
+.container1{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer__content{
+    flex: 4;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-right: 1px solid gray;
+}
+
+.footer__content-descr{
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.footer__content-descr span{
+    color: rgb(223, 223, 223);
+}
+
+.footer__content-descr span:hover{
+    color: red;
+    transition: 1s;
+}
+
+.footer__content-link a{
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.footer__content-link:hover{
+    text-decoration: underline;
+    color: red;
+    transition: 1s;
+}
+
+.footer__content-title{
+    color:  rgb(179, 179, 179);
+    margin-bottom: 20px;
+}
+
+.footer__content-links{
+    padding: 10px;
+}
+
+.footer__content-2{
+    flex: 5;
+}
+
+.footer__content3{
+    background: url(../assets/imgs/dynetic2.jpg) 0.1, 0.1 , 0.1;
+}
+
+.footer__content-descr a{
+    text-decoration: none;
+}
+
+.main__aboutus-title{
+    color: rgb(80, 80, 80);
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.main__aboutus-descr{
+    font-weight: 100;
+    color: rgb(32, 32, 32);
+}
+
+.main__aboutus-li{
+    font-size: 20px;
+    color: rgb(32, 32, 32);
+}
+
+
+.main__aboutus-ul{
+    padding: 20px 25px;
+}
+
+.last-descr{
+    padding-bottom: 50px;
+}
+
+
+.header__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header__dropbtn { /* Зеленый цвет */
+    color: grey;
+    /* padding: 10px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: white;
+}
+
+.header__dropdown-content {
+    text-align: left;
+    display: none;
+    position: absolute; /* Цвет фона */
+    min-width: 200px; /* Минимальная ширина */
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 100;
+    background-color: rgb(228, 228, 228);
+}
+
+.header__dropdown-content a {
+    border-bottom: 1px solid black;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; /* Блок для ссылки */
+}
+
+.header__dropdown-content a:hover {
+    background-color: rgb(197, 197, 197);
+     /* Цвет при наведении */
+     box-shadow: 10px 8px 16px 0px rgba(255, 0, 0, 0.2); /* Тень */
+     transition: 1s;
+}
+
+.header__dropdown:hover .header__dropdown-content {
+    display: block; /* Показать меню при наведении */
+}
+
+.header__dropdown:hover .header__dropbtn {
+    background-color: red(53, 53, 53); /* Цвет кнопки при наведении */
+}
+
+.main__content-box {}
+

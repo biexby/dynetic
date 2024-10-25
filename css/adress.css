@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: relative;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white; /* Полупрозрачный фон */
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgb(70, 70, 70);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 200px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.header__logo p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.header__nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.header__menu-item a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header__menu-item a:hover {
+    color: red; /* Цвет при наведении */
+}
+
+.header__menu-item span{
+    color: red;
+}
+
+.header__banner {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.header__banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.header__container nav{
+    position: sticky;
+}
+
+
+.main__content-texts{
+   width: 60%;
+   margin: 0 auto;
+   color: black;
+   font-size: 20px;
+}
+
+
+
+.main__content-adress{
+    color: black;
+    font-size: 20px;
+}
+
+.main{
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__content img{
+    width: 70px;
+    height: 70px;
+}
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.main__content-adress1{
+    display: flex;
+    
+}
+
+.main__content-phonenum{
+    display: flex;
+}
+
+.main__content-email{
+    display: flex;
+}
+
+.main__content h3{
+    padding: 30px;
+    text-decoration: none;
+}
+
+.main__content a{
+    text-decoration: none;
+    color: black;
+}
+
+.main__content a:hover{
+    color: red;
+    transition: 1s;
+}
